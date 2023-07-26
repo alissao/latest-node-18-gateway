@@ -1,0 +1,4 @@
+org.springframework.test.context.ContextCustomizerFactory = com.ecommerce.\
+    melilike.config.TestContainersSpringContextCustomizerFactory,com.ecommerce.\
+    melilike.config.SqlTestContainersSpringContextCustomizerFactory,com.\
+    ecommerce.melilike.config.KafkaTestContainersSpringContextCustomizerFactory
