@@ -1,0 +1,31 @@
+version: "3.8"
+name: latest-node-18-gateway-infra
+services:
+  nexus:
+    extends:
+      file: ./nexus.yml
+      service: nexus
+  sonar:
+    extends:
+      file: ./sonar.yml
+      service: sonar
+  jenkins:
+    extends:
+      file: ./jenkins.yml
+      service: jenkins
+  prometheus:
+    extends:
+      file: ./monitoring.yml
+      service: prometheus
+  grafana:
+    extends:
+      file: ./monitoring.yml
+      service: grafana
+  zipkin:
+    extends:
+      file: ./zipkin.yml
+      service: zipkin
+  postgresql:
+    extends:
+      file: ./postgresql.yml
+      service: postgresql

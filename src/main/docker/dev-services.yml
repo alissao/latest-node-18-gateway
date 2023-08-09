@@ -1,6 +1,0 @@
-name: latest-node-18-gateway-dev
-services:
-  nexus:
-    extends:
-      file: ./nexus.yml
-      service: nexus
